@@ -15,77 +15,17 @@
 
 This Toy Robot application is used to complete a Coding Challenge.
 
-Instructions to download this is found below.
+Instructions to download this purely JS solution futher below.
 
-For a Docker "containerised" version, this can be found here: https://github.com/mistergjones/toyrobotjs
+NOTL For a Docker "containerised" version, you can found it here:
+
+-   https://github.com/mistergjones/toyrobotjs
 
 ## Download
 
-Download via:
-
-Github:
+Download via Github:
 
 -   https://github.com/mistergjones/toyrobotpureJS
-
-Docker Hub Public Repository:
-
-## Assumptions
-
--   A simulated square table top meant utilising a GUI.
--   As per Example Input and Output below in the challenge, valid PLACE command is: "PLACE 0, 0, NORTH" and not "PLACE 0,0,NORTH" or any other variation.
--   Assumed that if an invalid command is given, no other valid command will work until a new valid PLACE command.
-
-## TEST DATA
-
-```
-PLACE -1, -1, SOUTH
-```
-
-Result: Ignored and Robot is not placed
-
-```
-PLACE 3, 3, WEST
-REPORT
-```
-
-Result: Standard Alert Dialogue appears showing Grid Position: 3,3,
-
-```
-MOVE
-MOVE
-MOVE
-MOVE
-REPORT
-```
-
-Result: The last move is ignored as robot would fall. REPORT shows current grid position: 0,3, WEST
-
-```
-RIGHT
-```
-
-Result: Toy Robot faces North
-
-```
-MOVE
-MOVE
-```
-
-Result: Toy Robot only moves 1 grid. Ignores second as it would fall off table.
-
-```
-MV
-RIGHT
-```
-
-Result: Application ignore MV and RIGHT. Becuse MV is a wrong command, it will ignore all other commands until a valid PLACE commmand is provided.
-
-```
-PLACE 1, 1, NORTH
-REPORT
-```
-
-Result: REPORT shows current grid position: 1,1,NORTH
 
 ## Necessary Deliverables
 
@@ -160,6 +100,64 @@ REPORT
 ```
 
 Output: 3, 3, NORTH
+
+## Assumptions
+
+-   A simulated square table top meant utilising a GUI.
+-   As per Example Input and Output below in the challenge, valid PLACE command is: "PLACE 0, 0, NORTH" and not "PLACE 0,0,NORTH" or any other variation.
+-   Assumed that if an invalid command is given, no other valid command will work until a new valid PLACE command.
+
+## TEST DATA
+
+```
+PLACE -1, -1, SOUTH
+```
+
+Result: Ignored and Robot is not placed
+
+```
+PLACE 3, 3, WEST
+REPORT
+```
+
+Result: Standard Alert Dialogue appears showing Grid Position: 3,3,
+
+```
+MOVE
+MOVE
+MOVE
+MOVE
+REPORT
+```
+
+Result: The last move is ignored as robot would fall. REPORT shows current grid position: 0,3, WEST
+
+```
+RIGHT
+```
+
+Result: Toy Robot faces North
+
+```
+MOVE
+MOVE
+```
+
+Result: Toy Robot only moves 1 grid. Ignores second as it would fall off table.
+
+```
+MV
+RIGHT
+```
+
+Result: Application ignore MV and RIGHT. Becuse MV is a wrong command, it will ignore all other commands until a valid PLACE commmand is provided.
+
+```
+PLACE 1, 1, NORTH
+REPORT
+```
+
+Result: REPORT shows current grid position: 1,1,NORTH
 
 ## Screenshots
 
