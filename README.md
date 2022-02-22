@@ -173,7 +173,6 @@ Result: REPORT shows current grid position: 1,1,NORTH
 ## Challenges
 
 -   Working out how to remove the previous image of a tank when it rotate or moves.
--
 
 ## Learnings
 
